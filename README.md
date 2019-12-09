@@ -15,6 +15,7 @@ In addition, students and educators alike frequently do not understand the confu
 A learning disability (LD) is a disability that affects how an individual of average to above-average intelligence processed information (receives it, integrates it, and/or expresses it). The student with a learning disability may have language-based and/or perceptual problems that affect reading, spelling, written, language, or mathematics.
 
 # Solution
+We are building a machine and AI solution that will be deployed on Android and scale to using VR to make learning FUN for everyone that wants to learn. The solution ask few questions and will recommend which learning style best suit the recipient.
 
 # Impact
 1. Learning becomes fun
