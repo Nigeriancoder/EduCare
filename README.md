@@ -17,3 +17,7 @@ A learning disability (LD) is a disability that affects how an individual of ave
 # Solution
 
 # Impact
+1. Learning becomes fun
+2. Everyone learn in a way that best suits them to aid assimiilation 
+3. Reduced failure rate
+4. Education won't be seen as a task anymore.
