@@ -2,7 +2,7 @@
     <string name="app_name">Educare</string>
 
 
-<!--    Questions and answers-->
+    <!--    Questions and answers-->
     <string name="question1">I need to find the way to a shop that a friend has recommended. I would:</string>
     <string name="question1OptionA">find out where the shop is in relation to somewhere I know</string>
     <string name="question1OptionB">ask my friend to tell me the directions</string>
@@ -99,7 +99,7 @@
     <string name="question16OptionC">written instructions that came with the parts for the table.</string>
     <string name="question16OptionD">watching a video of a person assembling a similar table.</string>
 
-<!--    Answers - learning model-->
+    <!--    Answers - learning model-->
     <string name="question1OptionAModel">Kinesthetic</string>
     <string name="question1OptionBModel">Aural</string>
     <string name="question1OptionCModel">Read</string>

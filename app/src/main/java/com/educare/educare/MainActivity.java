@@ -3,6 +3,7 @@ package com.educare.educare;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -22,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
     boolean textViewOptionBState = false;
     boolean textViewOptionCState = false;
     boolean textViewOptionDState = false;
-    private int currentQuestion = 1;
-    private String currentAnswer;
+    private int currentQuestion = 0;
+    private String currentAnswer = " ";
 
     int visual = 0;
-    int audio = 0;
+    int aural = 0;
     int reading = 0;
     int kinesthetic = 0;
 
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 nextQuestion();
             }
         });
+        nextQuestion();
     }
 
     private void nextQuestion() {
@@ -85,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             getResources().getString(optionId);
             updateScore(getResources().getString(optionId));
         }
-        deselectAllOptions();
+        deselectAllOptionsForNext();
         currentQuestion += 1;
         if (currentQuestion < 16) {
             String questionName = "question" + currentQuestion;
@@ -100,9 +102,32 @@ public class MainActivity extends AppCompatActivity {
             textViewOptionB.setText(questionOptionBId);
             textViewOptionC.setText(questionOptionCId);
             textViewOptionD.setText(questionOptionDId);
-        } else {
+        } else if (currentQuestion == 16){
             textViewNextFinish.setText("Finish");
-            Toast.makeText(this, "visual - " + visual + "\naural - " + audio + "\nreading - " + reading + "\nkinesthetic - " + kinesthetic, Toast.LENGTH_LONG).show();
+
+            String questionName = "question" + currentQuestion;
+            questionNumber.setText("Question " + currentQuestion + ":");
+            int questionId = getResources().getIdentifier(questionName, "string", "com.educare.educare");
+            int questionOptionAId = getResources().getIdentifier(questionName + "OptionA", "string", "com.educare.educare");
+            int questionOptionBId = getResources().getIdentifier(questionName + "OptionB", "string", "com.educare.educare");
+            int questionOptionCId = getResources().getIdentifier(questionName + "OptionC", "string", "com.educare.educare");
+            int questionOptionDId = getResources().getIdentifier(questionName + "OptionD", "string", "com.educare.educare");
+            questionDetail.setText(questionId);
+            textViewOptionA.setText(questionOptionAId);
+            textViewOptionB.setText(questionOptionBId);
+            textViewOptionC.setText(questionOptionCId);
+            textViewOptionD.setText(questionOptionDId);
+
+        } else{
+            Intent intent = new Intent(MainActivity.this, ScoreActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putInt(ScoreActivity.VISUAL_SCORE, visual);
+            bundle.putInt(ScoreActivity.AURAL_SCORE, aural);
+            bundle.putInt(ScoreActivity.READING_SCORE, reading);
+            bundle.putInt(ScoreActivity.KINESTHETIC_SCORE, kinesthetic);
+            intent.putExtras(bundle);
+            startActivity(intent);
+            Toast.makeText(this, "visual - " + visual + "\naural - " + aural + "\nreading - " + reading + "\nkinesthetic - " + kinesthetic, Toast.LENGTH_LONG).show();
         }
     }
 
@@ -112,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 visual++;
                 break;
             case "A":
-                audio++;
+                aural++;
                 break;
             case "R":
                 reading++;
@@ -165,5 +190,19 @@ public class MainActivity extends AppCompatActivity {
         textViewOptionB.setSelected(false);
         textViewOptionC.setSelected(false);
         textViewOptionD.setSelected(false);
+    }
+
+    private void deselectAllOptionsForNext() {
+        textViewOptionA.setSelected(false);
+        textViewOptionB.setSelected(false);
+        textViewOptionC.setSelected(false);
+        textViewOptionD.setSelected(false);
+
+        textViewOptionAState = false;
+        textViewOptionBState = false;
+        textViewOptionCState = false;
+        textViewOptionDState = false;
+
+        currentAnswer = " ";
     }
 }
