@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         actionBar = getSupportActionBar();
         actionBar.hide();
         setContentView(R.layout.activity_main);
+
         questionNumber = findViewById(R.id.question_number);
         questionDetail = findViewById(R.id.question_detail);
         textViewOptionA = findViewById(R.id.optionA);
@@ -91,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         currentQuestion += 1;
         if (currentQuestion < 16) {
             String questionName = "question" + currentQuestion;
-            questionNumber.setText("Question " + currentQuestion + ":");
+            questionNumber.setText("Question " + currentQuestion);
             int questionId = getResources().getIdentifier(questionName, "string", "com.educare.educare");
             int questionOptionAId = getResources().getIdentifier(questionName + "OptionA", "string", "com.educare.educare");
             int questionOptionBId = getResources().getIdentifier(questionName + "OptionB", "string", "com.educare.educare");
@@ -106,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
             textViewNextFinish.setText("Finish");
 
             String questionName = "question" + currentQuestion;
-            questionNumber.setText("Question " + currentQuestion + ":");
+            questionNumber.setText("Question " + currentQuestion );
             int questionId = getResources().getIdentifier(questionName, "string", "com.educare.educare");
             int questionOptionAId = getResources().getIdentifier(questionName + "OptionA", "string", "com.educare.educare");
             int questionOptionBId = getResources().getIdentifier(questionName + "OptionB", "string", "com.educare.educare");
@@ -127,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
             bundle.putInt(ScoreActivity.KINESTHETIC_SCORE, kinesthetic);
             intent.putExtras(bundle);
             startActivity(intent);
+            finish();
             Toast.makeText(this, "visual - " + visual + "\naural - " + aural + "\nreading - " + reading + "\nkinesthetic - " + kinesthetic, Toast.LENGTH_LONG).show();
         }
     }

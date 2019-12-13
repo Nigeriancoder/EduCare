@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#000000">
+    android:background="@color/colorBackground">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -23,58 +23,84 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Educare"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/black" />
     </androidx.appcompat.widget.Toolbar>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/colorBackground"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view"
+        android:layout_alignParentBottom="true"
+        android:overScrollMode="never"
+        android:scrollbarThumbVertical="@null">
     <LinearLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
-        android:orientation="vertical"
-        android:layout_margin="8dp">
+        android:layout_height="wrap_content"
 
-        <TextView
+        android:orientation="vertical">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Take a short quiz to help us determine how best you learn"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:textAlignment="center"/>
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/question_background">
 
-        <TextView
-            android:id="@+id/question_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Question 1:"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            />
+            <TextView
+                android:id="@+id/question_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="Question 1"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                app:fontFamily="@font/roboto_condensed_bold" />
 
-        <TextView
-            android:id="@+id/question_detail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="What is your most preferred learning material"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            />
+            <TextView
+                android:id="@+id/question_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="What is your most preferred learning material"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:fontFamily="@font/roboto_medium" />
+        </LinearLayout>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Take a short quiz to help us determine how best you learn"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textAlignment="center"/>-->
 
             <TextView
                 android:id="@+id/optionA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:layout_margin="1dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="16dp"
                 android:text="Visual"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:textSize="16sp"
+                app:fontFamily="@font/roboto_thin"
                 android:textColor="#ffffff"
                 android:background="@drawable/radiobutton_background"/>
 
@@ -82,11 +108,14 @@
                 android:id="@+id/optionB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:layout_margin="1dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="16dp"
                 android:text="Audio"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:textSize="16sp"
+                app:fontFamily="@font/roboto_thin"
                 android:textColor="#ffffff"
                 android:background="@drawable/radiobutton_background"/>
 
@@ -94,11 +123,14 @@
                 android:id="@+id/optionC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:layout_margin="1dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="16dp"
                 android:text="Reading"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:textSize="16sp"
+                app:fontFamily="@font/roboto_thin"
                 android:textColor="#ffffff"
                 android:background="@drawable/radiobutton_background"/>
 
@@ -106,11 +138,14 @@
                 android:id="@+id/optionD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-            android:layout_margin="1dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
             android:text="Kinethesiology"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:textSize="16sp"
+            app:fontFamily="@font/roboto_thin"
                 android:textColor="#ffffff"
                 android:background="@drawable/radiobutton_background"/>
 
@@ -118,7 +153,8 @@
             android:id="@+id/next_finish"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="48dp"
             android:paddingLeft="24dp"
             android:paddingRight="24dp"
             android:paddingTop="8dp"
@@ -127,10 +163,12 @@
             android:text="Next"
             android:textSize="20sp"
             android:textStyle="bold"
+            app:fontFamily="@font/roboto_condensed_bold"
             android:textColor="#ffffff"
+            android:clickable="true"
             android:background="@drawable/radiobutton_background"
             android:selectAllOnFocus="true"/>
 
     </LinearLayout>
-
+    </ScrollView>
 </RelativeLayout>

@@ -22,10 +22,10 @@
     <string name="question3OptionD">talk with the person who planned the tour or others who are going on the tour</string>
 
     <string name="question4">When choosing a career or area of study, these are important for me:</string>
-    <string name="question4OptionA">look at details about the highlights and activities on the tour.</string>
-    <string name="question4OptionB">use a map and see where the places are</string>
-    <string name="question4OptionC">read about the tour on the itinerary.</string>
-    <string name="question4OptionD">talk with the person who planned the tour or others who are going on the tour</string>
+    <string name="question4OptionA">Applying my knowledge in real situations.</string>
+    <string name="question4OptionB">Communicating with others through discussion.</string>
+    <string name="question4OptionC">Working with designs, maps or charts.</string>
+    <string name="question4OptionD">Using words well in written communications.</string>
 
     <string name="question5">When I am learning I:</string>
     <string name="question5OptionA">like to talk things through.</string>
