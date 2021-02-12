@@ -1,3 +1,183 @@
 <resources>
     <string name="app_name">Educare</string>
+
+
+    <!--    Questions and answers-->
+    <string name="question1">I need to find the way to a shop that a friend has recommended. I would:</string>
+    <string name="question1OptionA">find out where the shop is in relation to somewhere I know</string>
+    <string name="question1OptionB">ask my friend to tell me the directions</string>
+    <string name="question1OptionC">write down the street directions I need to remember</string>
+    <string name="question1OptionD">use a map</string>
+
+    <string name="question2">A website has a video showing how to make a special graph or chart. There is a person speaking, some lists and words describing what to do and some diagrams. I would learn most from:</string>
+    <string name="question2OptionA">seeing the diagrams</string>
+    <string name="question2OptionB">listening</string>
+    <string name="question2OptionC">reading the words</string>
+    <string name="question2OptionD">watching the actions</string>
+
+    <string name="question3">I want to find out more about a tour that I am going on. I would:</string>
+    <string name="question3OptionA">look at details about the highlights and activities on the tour.</string>
+    <string name="question3OptionB">use a map and see where the places are</string>
+    <string name="question3OptionC">read about the tour on the itinerary.</string>
+    <string name="question3OptionD">talk with the person who planned the tour or others who are going on the tour</string>
+
+    <string name="question4">When choosing a career or area of study, these are important for me:</string>
+    <string name="question4OptionA">Applying my knowledge in real situations.</string>
+    <string name="question4OptionB">Communicating with others through discussion.</string>
+    <string name="question4OptionC">Working with designs, maps or charts.</string>
+    <string name="question4OptionD">Using words well in written communications.</string>
+
+    <string name="question5">When I am learning I:</string>
+    <string name="question5OptionA">like to talk things through.</string>
+    <string name="question5OptionB">see patterns in things</string>
+    <string name="question5OptionC">use examples and applications</string>
+    <string name="question5OptionD">read books, articles and handouts</string>
+
+    <string name="question6">I want to save more money and to decide between a range of options. I would:</string>
+    <string name="question6OptionA">consider examples of each option using my financial information.</string>
+    <string name="question6OptionB">read a print brochure that describes the options in detail</string>
+    <string name="question6OptionC">use graphs showing different options for different time periods.</string>
+    <string name="question6OptionD">talk with an expert about the options</string>
+
+    <string name="question7">I need to find the way to a shop that a friend has recommended. I would:</string>
+    <string name="question7OptionA">watch others play the game before joining in</string>
+    <string name="question7OptionB">listen to somebody explaining it and ask questions</string>
+    <string name="question7OptionC">use the diagrams that explain the various stages, moves and strategies in the game</string>
+    <string name="question7OptionD">read the instructions</string>
+
+    <string name="question8">I have a problem with my heart. I would prefer that the doctor:</string>
+    <string name="question8OptionA">gave me something to read to explain what was wrong</string>
+    <string name="question8OptionB">used a plastic model to show me what was wrong</string>
+    <string name="question8OptionC">described what was wrong</string>
+    <string name="question8OptionD">showed me a diagram of what was wrong</string>
+
+    <string name="question9">I want to learn to do something new on a computer. I would:</string>
+    <string name="question9OptionA">read the written instructions that came with the program.</string>
+    <string name="question9OptionB">talk with people who know about the program.</string>
+    <string name="question9OptionC">start using it and learn by trial and error.</string>
+    <string name="question9OptionD">follow the diagrams in a book</string>
+
+    <string name="question10">When learning from the Internet I like:</string>
+    <string name="question10OptionA">videos showing how to do or make things.</string>
+    <string name="question10OptionB">interesting design and visual features.</string>
+    <string name="question10OptionC">interesting written descriptions, lists and explanations.</string>
+    <string name="question10OptionD">audio channels where I can listen to podcasts or interviews</string>
+
+    <string name="question11">I want to learn about a new project. I would ask for:</string>
+    <string name="question11OptionA">diagrams to show the project stages with charts of benefits and costs.</string>
+    <string name="question11OptionB">a written report describing the main features of the project.</string>
+    <string name="question11OptionC">an opportunity to discuss the project.</string>
+    <string name="question11OptionD">examples where the project has been used successfully.</string>
+
+    <string name="question12">I want to learn how to take better photos. I would:</string>
+    <string name="question12OptionA">ask questions and talk about the camera and its features.</string>
+    <string name="question12OptionB">use the written instructions about what to do.</string>
+    <string name="question12OptionC">use diagrams showing the camera and what each part does.</string>
+    <string name="question12OptionD">use examples of good and poor photos showing how to improve them.</string>
+
+    <string name="question13">I prefer a presenter or a teacher who uses:</string>
+    <string name="question13OptionA">demonstrations, models or practical sessions.</string>
+    <string name="question13OptionB">question and answer, talk, group discussion, or guest speakers.</string>
+    <string name="question13OptionC">handouts, books, or readings.</string>
+    <string name="question13OptionD">diagrams, charts, maps or graphs.</string>
+
+    <string name="question14">I have finished a competition or test and I would like some feedback. I would like to have feedback:</string>
+    <string name="question14OptionA">using examples from what I have done.</string>
+    <string name="question14OptionB">using a written description of my results.</string>
+    <string name="question14OptionC">from somebody who talks it through with me.</string>
+    <string name="question14OptionD">using graphs showing what I achieved.</string>
+
+    <string name="question15">I want to find out about a house or an apartment. Before visiting it I would want:</string>
+    <string name="question15OptionA">to view a video of the property.</string>
+    <string name="question15OptionB">a discussion with the owner.</string>
+    <string name="question15OptionC">a printed description of the rooms and features.</string>
+    <string name="question15OptionD">a plan showing the rooms and a map of the area.</string>
+
+    <string name="question16">I want to assemble a wooden table that came in parts (kitset). I would learn best from:</string>
+    <string name="question16OptionA">diagrams showing each stage of the assembly.</string>
+    <string name="question16OptionB">advice from someone who has done it before.</string>
+    <string name="question16OptionC">written instructions that came with the parts for the table.</string>
+    <string name="question16OptionD">watching a video of a person assembling a similar table.</string>
+
+    <!--    Answers - learning model-->
+    <string name="question1OptionAModel">Kinesthetic</string>
+    <string name="question1OptionBModel">Aural</string>
+    <string name="question1OptionCModel">Read</string>
+    <string name="question1OptionDModel">Visual</string>
+
+
+    <string name="question2OptionAModel">V</string>
+    <string name="question2OptionBModel">A</string>
+    <string name="question2OptionCModel">R</string>
+    <string name="question2OptionDModel">K</string>
+
+    <string name="question3OptionAModel">K</string>
+    <string name="question3OptionBModel">V</string>
+    <string name="question3OptionCModel">R</string>
+    <string name="question3OptionDModel">A</string>
+
+    <string name="question4OptionAModel">K</string>
+    <string name="question4OptionBModel">A</string>
+    <string name="question4OptionCModel">V</string>
+    <string name="question4OptionDModel">R</string>
+
+    <string name="question5OptionAModel">A</string>
+    <string name="question5OptionBModel">V</string>
+    <string name="question5OptionCModel">K</string>
+    <string name="question5OptionDModel">R</string>
+
+    <string name="question6OptionAModel">K</string>
+    <string name="question6OptionBModel">R</string>
+    <string name="question6OptionCModel">V</string>
+    <string name="question6OptionDModel">A</string>
+
+    <string name="question7OptionAModel">K</string>
+    <string name="question7OptionBModel">A</string>
+    <string name="question7OptionCModel">V</string>
+    <string name="question7OptionDModel">R</string>
+
+    <string name="question8OptionAModel">R</string>
+    <string name="question8OptionBModel">K</string>
+    <string name="question8OptionCModel">A</string>
+    <string name="question8OptionDModel">V</string>
+
+    <string name="question9OptionAModel">R</string>
+    <string name="question9OptionBModel">A</string>
+    <string name="question9OptionCModel">K</string>
+    <string name="question9OptionDModel">V</string>
+
+    <string name="question10OptionAModel">K</string>
+    <string name="question10OptionBModel">V</string>
+    <string name="question10OptionCModel">R</string>
+    <string name="question10OptionDModel">A</string>
+
+    <string name="question11OptionAModel">V</string>
+    <string name="question11OptionBModel">R</string>
+    <string name="question11OptionCModel">A</string>
+    <string name="question11OptionDModel">K</string>
+
+    <string name="question12OptionAModel">A</string>
+    <string name="question12OptionBModel">R</string>
+    <string name="question12OptionCModel">V</string>
+    <string name="question12OptionDModel">K</string>
+
+    <string name="question13OptionAModel">K</string>
+    <string name="question13OptionBModel">A</string>
+    <string name="question13OptionCModel">R</string>
+    <string name="question13OptionDModel">V</string>
+
+    <string name="question14OptionAModel">K</string>
+    <string name="question14OptionBModel">R</string>
+    <string name="question14OptionCModel">A</string>
+    <string name="question14OptionDModel">V</string>
+
+    <string name="question15OptionAModel">K</string>
+    <string name="question15OptionBModel">A</string>
+    <string name="question15OptionCModel">R</string>
+    <string name="question15OptionDModel">V</string>
+
+    <string name="question16OptionAModel">V</string>
+    <string name="question16OptionBModel">A</string>
+    <string name="question16OptionCModel">R</string>
+    <string name="question16OptionDModel">K</string>
 </resources>
